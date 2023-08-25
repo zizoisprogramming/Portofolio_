@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My portofolio</title>
+        <link rel="stylesheet" href = "portofolio.css">
+    </head>
+    <body>
+        <nav class="bar" id = "bar">
+            <label class = 'logo' id = 'logo'>Focus</label>
+            <ul>
+                <li><a href="#navigation" id = "H1" onmouseover="navbtns(1)" onmouseout="btnsrestore(1)">Home</a></li>
+                <li><a href="#about" id = "H2" onmouseover="navbtns(2)" onmouseout="btnsrestore(2)">About</a></li>
+                <li><a href="#services" id = "H3" onmouseover="navbtns(3)" onmouseout="btnsrestore(3)">Services</a></li>
+                <li><a href="#testimonals" id = "H4" onmouseover="navbtns(4)" onmouseout="btnsrestore(4)">Testimonals</a></li>
+                <li><a href="#portfolio" id = "H5" onmouseover="navbtns(5)" onmouseout="btnsrestore(5)">Portfolio</a></li>
+                <li><a href="#contact" id = "H6" onmouseover="navbtns(6)" onmouseout="btnsrestore(6)">Contact</a></li>
+                <li><a href="./cv/ziad Samer_compressed.pdf" download>
+                    <button type = "button" id = 'cv' onmouseover="document.getElementById('cv').style.color = 'black   '" onmouseout="document.getElementById('cv').style.color = 'white'">Download CV</button></a></li>
+            </ul>
+        </nav>
+        <div class = "navigation" id = "navigation">
+            <div class = 'container'>
+                <div class = 'intro'>
+                    <span id = "welcome">Hello, I am Ziad Samer. I am a Machine learning and software engineer.</span>
+                    <p id = 'sent'>I am young and passionate. I always work to exceed my limits</p>
+                    <p>
+                        <a href="./cv/ziad Samer_compressed.pdf" download>
+                        <button id ='st' onmouseover="document.getElementById('st').style.color = 'black   '" onmouseout="document.getElementById('st').style.color = 'white'">Get Started  </button>
+                        </a>
+                    </p>
+                </div>
+                <img src = "back.png" id = "im">
+            </div>
+        </div>
+        <div class = "services" id = "services">
+            <span id = 'titl'>Services</span>
+            <div class = 'graph'>
+                <div class = "sora">
+                    <span id = 'expert'>Expertise Services! Let's check it out</span>
+                    <img src = "brush (2).png" id = "brush">
+                </div>
+                <p id = 'b1'>I offer many services in the Computer Science field from Software tech to even Artificial Intelligence. </p>
+            </div>
+            <div class = "serv">
+                <div id = "ML" onmouseover="servicemouseon(`ML`)" onmouseout="servicemouseout(`ML`)">
+                    <h2>Machine learning</h2>
+                    <img src = "machine-learning.png" id = "ml">
+                    <p>I can build models that help automate different projects and apps </p>
+                </div>
+                <div id = "DS" onmouseover="servicemouseon(`DS`)" onmouseout="servicemouseout(`DS`)">
+                    <h2>Data Science</h2>
+                    <img src = "data.png" id = "data">
+                    <p>I can offer visualizations to data and give interpretations and ake decisions in case of dealing with datasets.</p>
+                </div>
+                <div id = "SE" onmouseover="servicemouseon(`SE`)" onmouseout="servicemouseout(`SE`)">
+                    <h2>Software Engineering</h2>
+                    <img src = "software-developer.png" id = "soft">
+                    <p>With different programming languages, I can build software systems that match your needs.</p>
+                </div>
+            </div>
+            <div class = "imgs">
+                <img src = "christmas-stars.png" id = "star">
+                <img src = "circle.png" id = "circle">
+            </div>
+        </div>
+        <div class = "about" id = "about">
+            <div id = "photos">
+                <img src = "about/rating.png" id = "rate">
+                <img src="about/scribble.png" id = "scribble">
+                <img src = "about/star (1).png" id = "star1">
+                <img src = "about/idea-bulb.png" id = "bulb">
+                <img src = "about/up-arrow-with-scribble.png" id = "scribble2">
+                <img src = "about/attachment.png" id = "attach">
+            </div>
+            <div class = "aboutSec">
+                <div class = "aboutCont">
+                    <h2 id = "titl3">About Me</h2>
+                    <span id = "kelma">Work in the now, and thrive tomorrow</span>
+                    <p id = "pr">I can gladly serve you with passion and love. I keen on learning a lot and to put all what I have learnt in the projects.</p>
+                    <div id = "exp">
+                        2+ years of experience
+                        <p>I have been dealing with data , coding and Artificial Intelligence for two years till now.</p>
+                    </div>
+                    <div id = "pros">
+                        Hands-on projects
+                        <p>
+                            I have implemented my knowledge in many projects regarding different aspects.
+                        </p>
+                    </div>
+                    <p>
+                        <a href="./cv/ziad Samer_compressed.pdf" download>
+                            <button id = 'cv2' onmouseover="document.getElementById('cv2').style.color = 'black'" onmouseout="document.getElementById('cv2').style.color = 'white'">Download CV</button>
+                        </a>
+                    </p>
+                </div>
+                <img src = "me.png" id = "mme">
+            </div>
+        </div>
+        <!--TESTIMONALS-->
+        <div class="testimonals" id="testimonals">
+            <span id="titl2">Testimonals</span> <br>
+            <span id="expert2">What People Say about US</span>
+            <div class="cards">
+                <div class="card">
+                    <p class="comment">"Great service! I couldn't be happier with the results."</p>
+                    <p class="commenter">John Doe</p>
+                    <p class="title">Computer Engineer</p>
+                </div>
+                <div class="card">
+                    <p class="comment">"Absolutely fantastic. The team went above and beyond to meet my needs."</p>
+                    <p class="commenter">Jane Smith</p>
+                    <p class="title">Software Developer</p>
+                </div>
+                <div class="card">
+                    <p class="comment">"Exceptional quality and attention to detail. Highly recommended!"</p>
+                    <p class="commenter">Michael Johnson</p>
+                    <p class="title">Client</p>
+                </div>
+            </div>
+        <!-- /////////////////////////////Projects///////////////////////////// -->
+        <div class="portfolio" id="portfolio">
+            <span id="titl2">Portfolio</span> <br>
+            <span id="expert2">Our Previous Projects</span>
+            <div class="button-container">
+              <div class="button active" style="background-color: rgb(231, 155, 7);" data-category="all">All projects</div>
+              <div class="button" data-category="software" style="background-color: transparent;">Software</div>
+              <div class="button" data-category="hardware" style="background-color: transparent;">Hardware</div>
+              <div class="button" data-category="electronics" style="background-color: transparent;">Electronics</div>
+            </div>
+            <div class="projects"><div class="project">
+                <h3 class="title">Software Project 1</h3>
+                <p class="description">This is a description for Software Project 1.</p>
+                <a href="https://www.google.com/search?q=software+project+1" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            <div class="project">
+                <h3 class="title">Hardware Project 1</h3>
+                <p class="description">This is a description for Hardware Project 1.</p>
+                <a href="https://www.google.com/search?q=hardware+project+1" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            <div class="project">
+                <h3 class="title">Electronics Project 1</h3>
+                <p class="description">This is a description for Electronics Project 1.</p>
+                <a href="https://www.google.com/search?q=electronics+project+1" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            <div class="project">
+                <h3 class="title">Software Project 2</h3>
+                <p class="description">This is a description for Software Project 2.</p>
+                <a href="https://www.google.com/search?q=software+project+2" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            <div class="project">
+                <h3 class="title">Hardware Project 2</h3>
+                <p class="description">This is a description for Hardware Project 2.</p>
+                <a href="https://www.google.com/search?q=hardware+project+2" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            <div class="project">
+                <h3 class="title">Electronics Project 2</h3>
+                <p class="description">This is a description for Electronics Project 2.</p>
+                <a href="https://www.google.com/search?q=electronics+project+2" target="_blank" class="icon-link">
+                <img src="github.png" alt="Link Icon" class="link-icon">
+                </a>
+            </div>
+            </div>
+                <script src="script.js"></script>
+            </div>
+            </div>
+        <!--CONTACTS-->
+        <div class = "contact" id = "contact">
+            <div id = "talk">
+                <h1 id = "ti">Are you ready to start talking about your project??!</h1>
+                <p>Let your dream project come true and let's talk about our project</p>
+                <button id = 'tact' onmouseover="document.getElementById('tact').style.color = 'white   '" onmouseout="document.getElementById('tact').style.color = 'black'">Contact Us</button>
+            </div>
+            <img src = "./contact/contactme.png" id = "cont">
+        </div>
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer-links">
+              <a href="#navigation">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Services</a>
+              <a href="#testimonals">Testimonals</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-text">© 2023 Zeyad. All Rights Reserved.</p>
+          </div>
+        <script src="portofolio.js"></script>
+    </body>
+</html>
